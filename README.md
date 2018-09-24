@@ -1,10 +1,13 @@
-#Feed Reader Jasmine Test Suite
+# Feed Reader Jasmine Project
 
-Hello! This project was for the Udacity FEND track that allows me to practice TDD methodology using Jasmine.
+Test on Feed Reader using the **Jasmine** JavaScript testing framework. 
 
 ## How To Run This Program
 
-To run this program, clone this repository onto your computer and run index.html in your browser.
+1. Clone repo on to your computer.
+2. Open repo folder and open *index.html* in your favorite browser.
+3. At the bottom of the page you'll see sever tests results with the heading ' specs, failures'.
+
 
 ## Technologies Used
 
