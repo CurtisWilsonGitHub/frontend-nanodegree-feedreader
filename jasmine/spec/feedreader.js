@@ -91,11 +91,15 @@ $(function() {
 /* TODO: Write a new test suite named "Initial Entries" */
 $(function(){
   describe('Initial Entries',function() {
+
     let feed = document.getElementsByClassName('feed')[0];
+
     let entries = feed.children;
 
     beforeEach(function(done){
+
       loadFeed(0, done);
+
     });
 
     /* TODO: Write a test that ensures when the loadFeed
@@ -107,16 +111,39 @@ $(function(){
 
      it('should load initial feed', function(done){
        expect(feed.childElementCount).toBeTruthy();
+
        for(entry of entries){
          expect(entry.querySelector('.entry')).toBeDefined();
        };
+
        done();
+
      });
+
    })
  });
 
- 
+
 /* TODO: Write a new test suite named "New Feed Selection" */
+
+$(function(){
+  describe('New Feed Selection',function() {
+    let firstElement = '', secondElement = '';
+
+    beforeEach(function(done){
+      loadFeed(0,done)
+      firstElement = document.getElementsByClassName('entry')[0];
+      loadFeed(1,done)
+      secondElement = document.getElementsByClassName('entry')[1];
+    });
+
+    it('should update content when a new feed is loaded',function(done){
+      expect(firstElement === secondElement).toBe(false)
+      done();
+    });
+
+  });
+});
 
     /* TODO: Write a test that ensures when a new feed is loaded
      * by the loadFeed function that the content actually changes.
