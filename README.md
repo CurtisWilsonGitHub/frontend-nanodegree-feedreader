@@ -1,6 +1,9 @@
 # Feed Reader Jasmine Project
 
-Test on Feed Reader using the **Jasmine** JavaScript testing framework. 
+Test on Feed Reader using the **Jasmine** JavaScript testing framework.
+The application is a simple RSS reader that display blogs and  also has UI
+functionality. The testing does checks to make sure the application is loading
+feeds correctly and the UI is functioning properly. 
 
 ## How To Run This Program
 
